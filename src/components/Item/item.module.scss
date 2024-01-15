@@ -1,0 +1,21 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0e6d2; /* Light beige background */
+    border: 0.3125rem solid #8f6b4a; /* Thick border in rem */
+    border-radius: 0.9375rem; /* Rounded borders in rem */
+    min-width: 7.25rem; /* Width in rem */
+    height: 15.625rem; /* Height in rem (2.5x width) */
+    padding: 0.625rem;
+    box-sizing: border-box; /* Include padding and border in the width and height */
+  }
+  
+  .item_title {
+    font-family: 'Press Start 2P', cursive; /* Pixel-art style font */
+    text-align: center;
+    color: #8f6b4a;
+    font-size: 1.2rem;
+  }
+  

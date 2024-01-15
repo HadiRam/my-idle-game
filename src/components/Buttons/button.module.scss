@@ -1,0 +1,30 @@
+/* Basic button styling */
+.video_game_button {
+    padding: 0.625rem 1.25rem;
+    background-color: #a67c52; /* Brownish-beige background */
+    color: #fff; /* White text for contrast */
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease; /* Smooth transitions for various properties */
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4); /* Text shadow for pop-out effect */
+}
+
+/* Hover effect */
+.video_game_button:hover {
+    background-color: #8f6b4a; /* Darker brownish-beige on hover */
+    box-shadow: 0rem 0.375rem 0.75rem rgba(0, 0, 0, 0.5); /* Larger shadow for lifted effect */
+    transform: translateY(-0.125rem); /* Slight upward shift */
+}
+
+/* Active/Focus effect */
+.video_game_button:active {
+    background-color: #755438; /* Even darker brownish-beige for active state */
+    box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.25); /* Smaller shadow, simulating pressed effect */
+    transform: translateY(0.125rem); /* Shift down to simulate pressing */
+}
