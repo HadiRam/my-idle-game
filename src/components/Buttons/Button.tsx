@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
 import classes from './button.module.scss'
-import { SweEngineer } from '../../assets/sweEngineer'
 
 type ButtonProps = {
     label: string;
-    onClick: () => void;
+    onClick: any;
 };
 
 export const Button: FC<ButtonProps> = ({ label, onClick }) => {

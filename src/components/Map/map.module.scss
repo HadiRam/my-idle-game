@@ -1,0 +1,21 @@
+.map {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 50rem;
+    border: 0.3125rem solid #8f6b4a;
+    border-radius: 0.9375rem;
+    background-color: #f0e6d2;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem
+}
+
+.square {
+    width: 5rem; /* Adjust size as needed */
+    height: 5rem;
+    border: 1px solid #8f6b4a;
+    border-radius: 1rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    /* Additional styling */
+}

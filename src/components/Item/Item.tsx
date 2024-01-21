@@ -1,19 +1,20 @@
-import React, { FC, useState } from 'react'
-import SweEngineer from '../../assets/sweEngineer'
+import { FC } from 'react'
+import { ItemImage,  } from '../../assets/itemImage'
 import Button from '../Buttons/Button'
 import classes from './item.module.scss'
 
-type NewComponentProps = {
-  title: string;
+type ItemProps = {
+  title: string
+  image: string
 }
 
-export const Item: FC<NewComponentProps> = ({ title }) => {
+export const Item: FC<ItemProps> = ({ title, image }) => {
 
   return (
     <div className={classes.item}>
       <h2 className={classes.item_title}>{title}</h2>
-      <SweEngineer width='110px' height='110px' />
-      <Button label='code' onClick={() => console.log('hi')} />
+      <ItemImage width='110px' height='110px' image={image}/>
+      <Button label='Buy' onClick={() => console.log('hi')} />
     </div>
   )
 }

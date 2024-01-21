@@ -7,28 +7,20 @@
     border: 0.3125rem solid #8f6b4a; /* Thick border in rem */
     border-radius: 0.9375rem; /* Rounded borders in rem */
     min-width: 7.25rem; /* Width in rem */
-    height: 15.625rem; /* Height in rem (2.5x width) */
+    max-height: 15.625rem; 
     padding: 0.625rem;
+    padding-bottom: 2rem;
     box-sizing: border-box; /* Include padding and border in the width and height */
   }
   
   .item_title {
     font-family: 'Press Start 2P', cursive; /* Pixel-art style font */
     text-align: center;
+    max-width: 10rem;
     color: #8f6b4a;
     font-size: 1.2rem;
   }
-  
-  .item_title2 {
-    font-family: 'Press Start 2P', cursive; /* Pixel-art style font */
-    text-align: center;
-    color: #2ab723;
-    font-size: 1.2rem;
-  }
-  
-  .item_title3 {
-    font-family: 'Press Start 2P', cursive; /* Pixel-art style font */
-    text-align: center;
-    color: #b72323;
-    font-size: 1.2rem;
+
+  .button_container {
+    margin-top: 80vh;
   }

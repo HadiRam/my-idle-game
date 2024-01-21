@@ -1,0 +1,64 @@
+.inventory {
+    display: grid;
+    grid-auto-flow: column; /* Columns are added automatically */
+    grid-template-rows: repeat(5, 1fr); /* 5 items per "row" (now column) */
+    grid-gap: 0.625rem;
+    padding: 0.625rem;
+    border: 0.3125rem solid #8f6b4a;
+    border-radius: 0.9375rem;
+    background-color: #f0e6d2;
+    justify-content: start; /* Aligns columns to the left */
+}
+
+.slot {
+    width: 6.25rem; /* 100px equivalent */
+    height: 6.25rem; /* 100px equivalent */
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid #8f6b4a;
+    border-radius: 4rem;
+    position: relative;
+    cursor: pointer; /* Indicates the item is clickable */
+    transition: transform 0.1s ease;
+}
+
+.slot:active {
+    transform: scale(0.95); /* Slight scale down on click */
+}
+
+.slot.disabled {
+    cursor: default; /* Changes cursor to indicate non-clickable */
+    opacity: 0.3; /* Dim the item to indicate it's disabled */
+    pointer-events: none; /* Prevents any click actions */
+}
+
+.item_quantity {
+    position: absolute;
+    top: 0.3125rem; /* 5px equivalent */
+    right: 0.3125rem; /* 5px equivalent */
+    font-weight: bold;
+    color: #ffffff; /* Changed to white for better contrast */
+    background-color: #64748b; /* A moderate blue for the background */
+    padding: 0.125rem 0.25rem; /* Slightly smaller padding */
+    border-radius: 0.25rem; /* 5px equivalent */
+    font-size: 0.75rem; /* Slightly smaller font size */
+    border: 1px solid #475569; /* Darker shade of blue for the border */
+}
+
+.item_image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.inventory_title {
+    font-family: 'Press Start 2P', cursive; /* Pixel-art style font */
+    text-align: center;
+    max-width: 10rem;
+    color: #8f6b4a;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem; /* Centered horizontally and spaced from the grid */
+}
